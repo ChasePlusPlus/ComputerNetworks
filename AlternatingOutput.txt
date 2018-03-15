@@ -1,0 +1,305 @@
+Chase Deets
+chd5hq
+Alternating Bit Protocol Output
+-----  Stop and Wait Network Simulator Version 1.1 -------- 
+
+Enter the number of messages to simulate: 20
+Enter  packet loss probability [enter 0.0 for no loss]:0.2
+Enter packet corruption probability [0.0 for no corruption]:0.2
+Enter average time between messages from sender's layer5 [ > 0.0]:1000.0
+Enter TRACE:1
+A_init called 
+B_init called!
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:1940, payload:aaaaaaaaaaaaaaaaaaaa
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:1940, payload:aaaaaaaaaaaaaaaaaaaa
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+          TOLAYER3: packet being corrupted
+ACK received at AInput: seqnum:0, acknum:0, chksum:207, payload:ZCK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:0, acknum:0, chksum:1940, payload:aaaaaaaaaaaaaaaaaaaa
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:1940, payload:aaaaaaaaaaaaaaaaaaaa
+Warning: unable to cancel your timer. It wasn't running.
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+          TOLAYER3: packet being lost
+TIMER INTERRUPT B CALLED!
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:1960, payload:bbbbbbbbbbbbbbbbbbbb
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:1960, payload:bbbbbbbbbbbbbbbbbbbb
+Warning: unable to cancel your timer. It wasn't running.
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+          TOLAYER3: packet being corrupted
+ACK received at AInput: seqnum:0, acknum:999999, chksum:207, payload:ACK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:0, acknum:0, chksum:1960, payload:bbbbbbbbbbbbbbbbbbbb
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:1960, payload:bbbbbbbbbbbbbbbbbbbb
+Warning: unable to cancel your timer. It wasn't running.
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+          TOLAYER3: packet being lost
+TIMER INTERRUPT B CALLED!
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:1980, payload:cccccccccccccccccccc
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:1980, payload:cccccccccccccccccccc
+Warning: unable to cancel your timer. It wasn't running.
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+          TOLAYER3: packet being corrupted
+ACK received at AInput: seqnum:0, acknum:999999, chksum:207, payload:ACK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:0, acknum:0, chksum:1980, payload:cccccccccccccccccccc
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:1980, payload:cccccccccccccccccccc
+Warning: unable to cancel your timer. It wasn't running.
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+          TOLAYER3: packet being lost
+TIMER INTERRUPT B CALLED!
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:2000, payload:dddddddddddddddddddd
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2000, payload:dddddddddddddddddddd
+Warning: unable to cancel your timer. It wasn't running.
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+ACK received at AInput: seqnum:0, acknum:0, chksum:207, payload:ACK
+          TOLAYER3: packet being lost
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2022, payload:eeeeeeeeeeeeeeeeeeee
+TIMER INTERRUPT A TRIGGERED 
+retransmitting pkt to layer 3 - seqnum:1 - acknum:1 - chksum:2022 - payload:eeeeeeeeeeeeeeeeeeee
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2022, payload:eeeeeeeeeeeeeeeeeeee
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+          TOLAYER3: packet being lost
+TIMER INTERRUPT A TRIGGERED 
+retransmitting pkt to layer 3 - seqnum:1 - acknum:1 - chksum:2022 - payload:eeeeeeeeeeeeeeeeeeee
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2022, payload:eeeeeeeeeeeeeeeeeeee
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ACK
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:2040, payload:ffffffffffffffffffff
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2040, payload:ffffffffffffffffffff
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+ACK received at AInput: seqnum:0, acknum:0, chksum:207, payload:ACK
+          TOLAYER3: packet being corrupted
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2062, payload:gggggggggggggggggggg
+B_input called! Packet received!
+B PKT at BInput: seqnum:999999, acknum:1, chksum:2062, payload:gggggggggggggggggggg
+Warning: unable to cancel your timer. It wasn't running.
+PACKET RECEIVED IS CORRUPT - checksum:1002060, expectedcheck:2062 
+sending NACK...
+sent NACK to layer3 - seqnum:1 acknum:1 checksum:212 payload:NACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:212, payload:NACK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:1, acknum:1, chksum:2062, payload:gggggggggggggggggggg
+          TOLAYER3: packet being corrupted
+B_input called! Packet received!
+B PKT at BInput: seqnum:999999, acknum:1, chksum:2062, payload:gggggggggggggggggggg
+Warning: unable to cancel your timer. It wasn't running.
+PACKET RECEIVED IS CORRUPT - checksum:1002060, expectedcheck:2062 
+sending NACK...
+sent NACK to layer3 - seqnum:1 acknum:1 checksum:212 payload:NACK 
+          TOLAYER3: packet being corrupted
+ACK received at AInput: seqnum:1, acknum:999999, chksum:212, payload:NACK
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:1, acknum:1, chksum:2062, payload:gggggggggggggggggggg
+          TOLAYER3: packet being lost
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2082, payload:hhhhhhhhhhhhhhhhhhhh
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2082, payload:hhhhhhhhhhhhhhhhhhhh
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ACK
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:2100, payload:iiiiiiiiiiiiiiiiiiii
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2100, payload:iiiiiiiiiiiiiiiiiiii
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+ACK received at AInput: seqnum:0, acknum:0, chksum:207, payload:ACK
+          TOLAYER3: packet being corrupted
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2122, payload:jjjjjjjjjjjjjjjjjjjj
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:999999, chksum:2122, payload:jjjjjjjjjjjjjjjjjjjj
+Warning: unable to cancel your timer. It wasn't running.
+PACKET RECEIVED IS CORRUPT - checksum:1002120, expectedcheck:2122 
+sending NACK...
+sent NACK to layer3 - seqnum:1 acknum:1 checksum:212 payload:NACK 
+          TOLAYER3: packet being corrupted
+ACK received at AInput: seqnum:999999, acknum:1, chksum:212, payload:NACK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:1, acknum:1, chksum:2122, payload:jjjjjjjjjjjjjjjjjjjj
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2122, payload:jjjjjjjjjjjjjjjjjjjj
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ACK
+Warning: unable to cancel your timer. It wasn't running.
+          TOLAYER3: packet being lost
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:2140, payload:kkkkkkkkkkkkkkkkkkkk
+TIMER INTERRUPT A TRIGGERED 
+retransmitting pkt to layer 3 - seqnum:0 - acknum:0 - chksum:2140 - payload:kkkkkkkkkkkkkkkkkkkk
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2140, payload:kkkkkkkkkkkkkkkkkkkk
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+ACK received at AInput: seqnum:0, acknum:0, chksum:207, payload:ACK
+          TOLAYER3: packet being corrupted
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2162, payload:llllllllllllllllllll
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2162, payload:Zlllllllllllllllllll
+Warning: unable to cancel your timer. It wasn't running.
+PACKET RECEIVED IS CORRUPT - checksum:2144, expectedcheck:2162 
+sending NACK...
+sent NACK to layer3 - seqnum:1 acknum:1 checksum:212 payload:NACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:212, payload:NACK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:1, acknum:1, chksum:2162, payload:llllllllllllllllllll
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2162, payload:llllllllllllllllllll
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ACK
+Warning: unable to cancel your timer. It wasn't running.
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:2180, payload:mmmmmmmmmmmmmmmmmmmm
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2180, payload:mmmmmmmmmmmmmmmmmmmm
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+ACK received at AInput: seqnum:0, acknum:0, chksum:207, payload:ACK
+          TOLAYER3: packet being lost
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2202, payload:nnnnnnnnnnnnnnnnnnnn
+TIMER INTERRUPT A TRIGGERED 
+retransmitting pkt to layer 3 - seqnum:1 - acknum:1 - chksum:2202 - payload:nnnnnnnnnnnnnnnnnnnn
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2202, payload:nnnnnnnnnnnnnnnnnnnn
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ACK
+          TOLAYER3: packet being corrupted
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:2220, payload:oooooooooooooooooooo
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2220, payload:Zooooooooooooooooooo
+Warning: unable to cancel your timer. It wasn't running.
+PACKET RECEIVED IS CORRUPT - checksum:2199, expectedcheck:2220 
+sending NACK...
+sent NACK to layer3 - seqnum:0 acknum:0 checksum:210 payload:NACK 
+ACK received at AInput: seqnum:0, acknum:0, chksum:210, payload:NACK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:0, acknum:0, chksum:2220, payload:oooooooooooooooooooo
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2220, payload:oooooooooooooooooooo
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+ACK received at AInput: seqnum:0, acknum:0, chksum:207, payload:ACK
+Warning: unable to cancel your timer. It wasn't running.
+          TOLAYER3: packet being lost
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2242, payload:pppppppppppppppppppp
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2262, payload:qqqqqqqqqqqqqqqqqqqq
+Warning: attempt to start a timer that is already started
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2262, payload:qqqqqqqqqqqqqqqqqqqq
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+          TOLAYER3: packet being corrupted
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ZCK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:1, acknum:1, chksum:2262, payload:qqqqqqqqqqqqqqqqqqqq
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2262, payload:qqqqqqqqqqqqqqqqqqqq
+Warning: unable to cancel your timer. It wasn't running.
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ACK
+Warning: unable to cancel your timer. It wasn't running.
+          TOLAYER3: packet being corrupted
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:2280, payload:rrrrrrrrrrrrrrrrrrrr
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2280, payload:Zrrrrrrrrrrrrrrrrrrr
+Warning: unable to cancel your timer. It wasn't running.
+PACKET RECEIVED IS CORRUPT - checksum:2256, expectedcheck:2280 
+sending NACK...
+sent NACK to layer3 - seqnum:0 acknum:0 checksum:210 payload:NACK 
+          TOLAYER3: packet being corrupted
+ACK received at AInput: seqnum:0, acknum:999999, chksum:210, payload:NACK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:0, acknum:0, chksum:2280, payload:rrrrrrrrrrrrrrrrrrrr
+B_input called! Packet received!
+B PKT at BInput: seqnum:0, acknum:0, chksum:2280, payload:rrrrrrrrrrrrrrrrrrrr
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:0 acknum:0 checksum:207 payload:ACK 
+ACK received at AInput: seqnum:0, acknum:0, chksum:207, payload:ACK
+Warning: unable to cancel your timer. It wasn't running.
+          TOLAYER3: packet being lost
+
+A sent pkt to layer 3: seqnum:1, acknum:1, chksum:2302, payload:ssssssssssssssssssss
+TIMER INTERRUPT A TRIGGERED 
+retransmitting pkt to layer 3 - seqnum:1 - acknum:1 - chksum:2302 - payload:ssssssssssssssssssss
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2302, payload:ssssssssssssssssssss
+Warning: unable to cancel your timer. It wasn't running.
+PACKET DELIVERED TO LAYER 5! 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+          TOLAYER3: packet being corrupted
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ZCK
+Warning: attempt to start a timer that is already started
+BAD ACK, RETRANSMITTING Last packet
+RETRANS: to layer 3 - seqnum:1, acknum:1, chksum:2302, payload:ssssssssssssssssssss
+B_input called! Packet received!
+B PKT at BInput: seqnum:1, acknum:1, chksum:2302, payload:ssssssssssssssssssss
+Warning: unable to cancel your timer. It wasn't running.
+Duplicate packet was delivered, Not transmitting... carry on 
+sent ACK to layer3 - seqnum:1 acknum:1 checksum:209 payload:ACK 
+ACK received at AInput: seqnum:1, acknum:1, chksum:209, payload:ACK
+Warning: unable to cancel your timer. It wasn't running.
+
+A sent pkt to layer 3: seqnum:0, acknum:0, chksum:2320, payload:tttttttttttttttttttt
+ Simulator terminated at time 22572.855469
+ after sending 20 msgs from layer5
