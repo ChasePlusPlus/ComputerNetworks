@@ -2,6 +2,9 @@
 #include <string.h>
 #include <stdbool.h>
 
+//NAME: Chase Deets
+//CID: chd5hq
+
 /* ******************************************************************
  ALTERNATING BIT AND GO-BACK-N NETWORK EMULATOR: VERSION 1.1  J.F.Kurose
 
@@ -89,7 +92,7 @@ struct msg message;
     sendpkt.seqnum, sendpkt.acknum, sendpkt.checksum, sendpkt.payload);
 
   //start/reset timer:
-  starttimer(0, 1000.0);
+  starttimer(0, 500.0);
 
 }
 
@@ -106,8 +109,8 @@ void
 A_input(packet)
 struct pkt packet;
 {
-  printf("A_input called, ACK/NACK received! \n");
-  printf("ACK at AInput: seqnum:%d, acknum:%d, chksum:%d, payload:%s\n", 
+  //printf("A_input called, ACK/NACK received! \n");
+  printf("ACK received at AInput: seqnum:%d, acknum:%d, chksum:%d, payload:%s\n", 
     packet.seqnum, packet.acknum, packet.checksum, packet.payload);
   stoptimer(1);
   //check if ack or nack or corrupt
@@ -189,16 +192,23 @@ struct pkt packet;
 
   
   if(corrupt == false){
-    int ackchksum = 0;
     //if fine send to layer5, send ACK to layer3
-    tolayer5(1, packet);
-    printf("PACKET DELIVERED TO LAYER 5! \n");
-
+    if(packet.seqnum == expectedseqnum){
+      tolayer5(1, packet);
+      printf("PACKET DELIVERED TO LAYER 5! \n");
+      if(expectedseqnum == 0)
+        expectedseqnum = 1;
+      else if (expectedseqnum == 1)
+        expectedseqnum = 0;
+      ack = expectedseqnum;
+    }else{
+      printf("Duplicate packet was delivered, Not transmitting... carry on \n");
+    }
     ackpkt.seqnum = packet.seqnum;
     ackpkt.acknum = packet.acknum;
     strcpy(ackpkt.payload, "ACK");
     ackpkt.checksum = 0;
-
+    int ackchksum = 0;
     ackchksum += ackpkt.seqnum + ackpkt.acknum;
     for (int i = 0; i < 3; i++){
        ackchksum += ackpkt.payload[i] - 0;
@@ -210,13 +220,8 @@ struct pkt packet;
     tolayer3(1, ackpkt);
 
     //if(expectedseqnum == packet.seqnum){
-      if(expectedseqnum == 0)
-        expectedseqnum = 1;
-      else if (expectedseqnum == 1)
-        expectedseqnum = 0;
-      ack = expectedseqnum;
-      } 
-    //}
+
+    }
 
   //else send NACK
   if(corrupt == true){
